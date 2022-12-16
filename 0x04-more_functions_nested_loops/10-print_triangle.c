@@ -17,7 +17,7 @@ else
 {
 for (ac = 0; ac <= (size - 1); ac++)
 {
-for (ab = 0; ab < (size - 1) - ac; sp++)
+for (ab = 0; ab < (size - 1) - ac; ab++)
 {
 _putchar(' ');
 }
