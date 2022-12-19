@@ -13,5 +13,7 @@ int length = 0;
 while (*str++)
 length++;
 
+ _putchar(length);
+ 
 return (length);
 }
