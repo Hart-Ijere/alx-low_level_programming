@@ -16,7 +16,7 @@ char *i;
 unsigned int a;
 
 i = malloc(sizeof(char) * size);
-if (size == 0 || s == NULL)
+if (size == 0 || size == NULL)
 return (NULL);
 for (a = 0; a < size; a++);
 {
