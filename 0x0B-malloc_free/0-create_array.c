@@ -14,9 +14,9 @@ char *create_array(unsigned int size, char c)
 {
 char *ptr;
 
-ptr = malloc(sizeof(char) * 1);
+ptr = malloc(sizeof(char) * 100);
 *ptr = 'A';
-ptr = c;
+*ptr = c;
  
 if (size == 0)
 return (NULL);
