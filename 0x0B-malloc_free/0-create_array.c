@@ -13,9 +13,12 @@
 char *create_array(unsigned int size, char c)
 {
 char *ptr;
-ptr = malloc(sizeof(char) * 5);
-*ptr = c;
-if (size == 0 )
+
+ptr = malloc(sizeof(char) * 1);
+*ptr = 'A';
+ptr = c;
+ 
+if (size == 0)
 return (NULL);
 else
 return (ptr);
