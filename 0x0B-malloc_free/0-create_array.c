@@ -18,7 +18,7 @@ ptr = malloc(sizeof(char) * size);
 ptr[0] = 'A';
 *ptr = c;
  
-if (size = 0)
+if (size == 0)
 {
 return (NULL);
 }
