@@ -14,8 +14,8 @@ char *create_array(unsigned int size, char c)
 {
 char *ptr;
 
-ptr = malloc(sizeof(char) * 100);
-ptr[] = 'A';
+ptr = malloc(sizeof(char) * size);
+*ptr[] = 'A';
 *ptr = c;
  
 if (size == 0)
