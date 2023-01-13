@@ -23,7 +23,7 @@ return (NULL);
 }
 else
 {
-return (ptr);
+return (*ptr);
 }
-return (ptr);
+return (*ptr);
 }
