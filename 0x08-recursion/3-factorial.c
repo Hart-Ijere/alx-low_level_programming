@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* factorial - calculates the factorial of a numb* er
-* @n: number to be evaluated
+* factorial - calculates the factorial of a number
+* @n: number to be calculated
 *
 * Return: (-1) if n is less than zero
 */
@@ -17,6 +17,3 @@ return (1);
 
 return n * factorial(n - 1);
 }
-
-    
-
