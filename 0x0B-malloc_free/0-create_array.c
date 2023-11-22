@@ -5,8 +5,8 @@
 /**
 * create_array - creates an array of chars and
 *                initializes it with a specific ..
-* @size: integer parameter
-" @c: character parameter
+* @size: determines the array size
+" @c: charactee to be initialized
 *
 * Return: pointer to the array or NULL if it fails
 */
@@ -23,7 +23,7 @@ return (NULL);
 str = malloc(sizeof(char) * size);
 
 if (str == 0)
-  return (NULL)
+return (NULL)
  
 
 i = 0;
