@@ -22,10 +22,15 @@ return (NULL);
 
 str = malloc(sizeof(char) * size);
 
+if (str == 0)
+  return (NULL)
+ 
+
 i = 0;
 while (i < size)
 {
 str[i] = c;
+i++;
 }
  
 return (str);
