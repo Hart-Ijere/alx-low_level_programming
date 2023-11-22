@@ -17,7 +17,7 @@ char *str;
 int i;
 
 
-if ( == 0)
+if (size == 0)
 return (NULL);
 
 str = malloc(sizeof(char) * size);
@@ -29,6 +29,5 @@ str[i] = c;
 }
  
 return (str);
-free(str);
 
 }
