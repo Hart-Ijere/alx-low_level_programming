@@ -20,7 +20,7 @@ unsigned int i;
 if (size == 0)
 return (NULL);
 
-str = malloc(sizeof(char) * size);
+str = (char *)malloc(sizeof(char) * size);
 
 if (str == 0)
 return (NULL)
