@@ -17,7 +17,7 @@ char *str;
 int i;
 
 
-if (str == 0)
+if ( == 0)
 return (NULL);
 
 str = malloc(sizeof(char) * size);
