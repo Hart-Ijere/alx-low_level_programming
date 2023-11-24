@@ -10,7 +10,7 @@
 * Return: Null if size is zero
 */
 
-*create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 char *str;
 unsigned int i;
