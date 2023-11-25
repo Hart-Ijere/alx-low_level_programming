@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 
 /**
@@ -26,7 +27,7 @@ return (NULL);
 i = 0;
 while (*str != '\0')
 {
-ptr[i] *str;
+ptr[i] = *str;
 i++;
 str++;
 }
