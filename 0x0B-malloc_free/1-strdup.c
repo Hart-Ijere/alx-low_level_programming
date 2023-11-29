@@ -34,4 +34,4 @@ str++;
 
 return (ptr);
 free(ptr);
-}
+
