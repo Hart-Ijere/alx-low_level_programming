@@ -3,7 +3,7 @@
 #include "main.h"
 
 /*
- * Concatenates two strings.
+ * str_concat - Concatenates two strings.
  * If NULL is passed, treats it as an empty strin
  * g
  * The returned pointer points to a newly alloca
@@ -34,10 +34,10 @@ len_s2 = strlen(s2);
 result = (char *)malloc(len_s1 + len_s2 + 1);
 if (result == NULL)
 {
-return NULL;
+return (NULL);
 }
 strcpy(result, s1);
 strcat(result, s2);
-return result;
+return (result);
 free(result);
 }
