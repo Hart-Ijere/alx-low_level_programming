@@ -13,9 +13,9 @@
 /**
  * res - function that helps _sqrt_recursio
  * n
- *@i: parameter
- @b: parameter
- @j: parameter
+ * @i: parameter
+ * @b: parameter
+ * @j: parameter
  * Return: ctr
  */
 
@@ -29,11 +29,12 @@ return res(n, 0, n);
 }
 
 int res(int i, int b, int j)
+int m;
 if (b <= j)
 {
-int m;
 m = b + (j - b) / 2;
 if ((m + m == n) || ((m * m < n) && ((m + 1) * (m + 1) > n)))
+{
 return (m);
 }
 else if (m * m < n)
