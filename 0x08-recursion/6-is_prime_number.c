@@ -7,7 +7,7 @@
  * @n: number to be checked
  * @i: number to be computed
  *
- * Return 1
+ * Return: 0 or 1
  */
 
 int is_prime_number_hp(int n, int i)
