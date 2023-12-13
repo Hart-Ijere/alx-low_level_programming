@@ -13,36 +13,37 @@
 /**
  * res - function that helps _sqrt_recursio
  * n
- * @begin: parameter
+ * @n: parameter
  * @start: parameter
  * @end: parameter
- * Return: ctr
+ * Return: -1
  */
 
 int _sqrt_recursion(int n)
 {
-if (n < 0)
-{
-return (-1);
-}
-return res(n, 0, n);
+if (n < 0) {
+return -1;
 }
 
-int res(int begin, int start, int end)
-int middle;
-if (start  <= end)
-{
-middle = start + (end - start) / 2;
-if ((middle + middle == n) || ((middle * middle < n) && ((middle + 1) * (middle + 1) > n)))
-{
-return (middle);
+return _sqrt_helper(n, 0, n);
 }
-else if (middle * middle < begin)
+
+int _sqrt_helper(int n, int start, int end){
+if (start <= end) {
+int mid = start + (end - start) / 2;
+
+if ((mid * mid == n) || ((mid * mid < n) &&((mid + 1) * (mid + 1) > n))) {
+return mid;
+}
+else if (mid * mid < n)
 {
-return res(begin, middle + 1, end);
+return _sqrt_helper(n, mid + 1, end);
 }
 else
 {
-return res(begin, start, middle - 1);
+return _sqrt_helper(n, start, mid - 1);
 }
 }
+return -1;
+}
+
