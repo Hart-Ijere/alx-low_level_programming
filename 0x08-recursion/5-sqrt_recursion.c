@@ -11,7 +11,7 @@
  */
 
 /**
- * res - function that helps _sqrt_recursio
+ * _sqrt_helper - function that helps _sqrt_recursio
  * n
  * @n: parameter
  * @start: parameter
@@ -21,29 +21,30 @@
 
 int _sqrt_recursion(int n)
 {
-if (n < 0) {
-return -1;
-}
+if (n < 0)
+return (-1);
 
-return _sqrt_helper(n, 0, n);
+return (_sqrt_helper(n, 0, n));
 }
 
 int _sqrt_helper(int n, int start, int end){
-if (start <= end) {
+if (start <= end)
+{
 int mid = start + (end - start) / 2;
 
-if ((mid * mid == n) || ((mid * mid < n) &&((mid + 1) * (mid + 1) > n))) {
-return mid;
+if ((mid * mid == n) || ((mid * mid < n) &&((mid + 1) * (mid + 1) > n)))
+{
+return (mid);
 }
 else if (mid * mid < n)
 {
-return _sqrt_helper(n, mid + 1, end);
+return (_sqrt_helper(n, mid + 1, end));
 }
 else
 {
-return _sqrt_helper(n, start, mid - 1);
+return (_sqrt_helper(n, start, mid - 1));
 }
 }
-return -1;
+return (-1);
 }
 
