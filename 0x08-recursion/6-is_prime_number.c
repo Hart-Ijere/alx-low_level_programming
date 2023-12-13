@@ -8,9 +8,6 @@
  *
  * Return: 1 if number is a prime, 0 otherw
  * ise
- */
-
-/**
  * is_prime_number_hp - helper function
  * @n - parameter
  * @i - parameter
