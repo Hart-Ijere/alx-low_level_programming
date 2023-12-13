@@ -13,9 +13,9 @@
 /**
  * res - function that helps _sqrt_recursio
  * n
- * @i: parameter
- * @b: parameter
- * @j: parameter
+ * @begin: parameter
+ * @start: parameter
+ * @end: parameter
  * Return: ctr
  */
 
@@ -28,21 +28,21 @@ return (-1);
 return res(n, 0, n);
 }
 
-int res(int i, int b, int j)
-int m;
-if (b <= j)
+int res(int begin, int start, int end)
+int middle;
+if (start  <= end)
 {
-m = b + (j - b) / 2;
-if ((m + m == n) || ((m * m < n) && ((m + 1) * (m + 1) > n)))
+middle = start + (end - start) / 2;
+if ((middle + middle == n) || ((middle * middle < n) && ((middle + 1) * (middle + 1) > n)))
 {
-return (m);
+return (middle);
 }
-else if (m * m < n)
+else if (middle * middle < begin)
 {
-return res(n, m + 1, j);
+return res(begin, middle + 1, end);
 }
 else
 {
-return res(n, b, m - 1);
+return res(begin, start, middle - 1);
 }
 }
