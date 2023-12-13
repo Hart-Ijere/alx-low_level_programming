@@ -5,19 +5,12 @@
  * _sqrt_recursion - function that computes
  * the natural square root of a number
  * @n: parameter value to be computed
+ * _sqrt_helper - function helper
  *
  * Return: (-1) if n does not have a natura
  * l square root
  */
 
-/**
- * _sqrt_helper - function helper
- * @n: parameter
- * @start: parameter
- * @end: parameter
- *
- * Return: -1
- */
 
 int _sqrt_recursion(int n)
 {
