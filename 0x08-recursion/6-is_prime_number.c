@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include "main.h"
 
 /**
@@ -7,27 +6,30 @@
  * er is a prime number
  * @n: number to be checked
  *
+ * is_prime_number_hp - helper
+ * @i - parameter
  * Return: 1 if number is a prime, 0 otherw
  * ise
  */
 
-int _is_prime_number(int n)
+int is_prime_number_hp(int n, int i)
 {
-if (n < 2)
+if (n <= 1)
 {
 return (0);
 }
-if (n == 2)
+if (i == 1)
 {
 return (1);
 }
-for (int i = 2; i <= sqrt(n); i++)
-{
 if (n % i == 0)
 {
-return (0);
+return 0;
 }
+return (is_prime_number_hp(n, i - 1));
 }
 
-return (1);
+int is_prime_number(int n)
+{
+return (is_prime_number_hp(n, n - 1));
 }
