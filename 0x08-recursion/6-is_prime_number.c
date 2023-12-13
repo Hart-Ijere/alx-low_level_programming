@@ -2,17 +2,12 @@
 #include "main.h"
 
 /**
- * is_prime_number - checks if a given numb
+ * is_prime_number_hp - checks if a given numb
  * er is a prime number
  * @n: number to be checked
+ * @i: number to be computed
  *
- * Return: 1 if number is a prime, 0 otherw
- * ise
- * is_prime_number_hp - helper function
- * @n - parameter
- * @i - parameter
- *
- * Return: 1
+ * Return 1
  */
 
 int is_prime_number_hp(int n, int i)
@@ -31,6 +26,13 @@ return (0);
 }
 return (is_prime_number_hp(n, i - 1));
 }
+
+/**
+ * is_prime_number - checks for a prime
+ * @n: number to compute
+ *
+ * Return: value of helper funtion
+ */
 
 int is_prime_number(int n)
 {
