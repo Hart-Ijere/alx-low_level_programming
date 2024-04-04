@@ -1,11 +1,14 @@
 CC = gcc
+
 SOURCE = main.c
-TARGET = school.c
+
+TARGET = school
 
 all: $(TARGET)
 
 $(TARGET): $(SOURCE)
-	$(CC) -o $(TARGET) $(SOURCE)
+$(CC) -o $(TARGET) $(SOURCE)
 
 clean:
-	rm -f $(TARGET)
+
+rm -f $(TARGET)
