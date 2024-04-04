@@ -1,4 +1,11 @@
-school:
-gcc -o school main.c
+CC = gcc
+SOURCE = main.c
+TARGET = school
 
-all: school	
+all: $(TARGET)
+
+$(TARGET): $(SOURCE)
+	$(CC) -o $(TARGET) $(SOURCE)
+
+clean:
+	rm -f $(TARGET)
