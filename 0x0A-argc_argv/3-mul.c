@@ -3,20 +3,16 @@
 #include "main.h"
 
 /**
- * main - multiplies two integers and prints the result
- * @argc: counts number of arguments
- * @argv: stores the aarguments passed
- * @__attribute__: makes compiler skip an argument without complaining
+ * main - Multiplies two numbers passed as arguments
+ * @argc: Argument count
+ * @argv: Argument vector (array of strings)
  *
- * Return: Always zero
+ * Return: 0 if successful, 1 if there are not exactly 2 arguments
  */
-
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
-  
-int num;
-int num2;
-int result;
+int num, num2, result;
+
 if (argc != 3)
 {
 printf("Error\n");
@@ -29,6 +25,8 @@ num2 = atoi(argv[2]);
 result = num * num2;
 printf("%d\n", result);
 }
+
 return (0);
 }
+
   
