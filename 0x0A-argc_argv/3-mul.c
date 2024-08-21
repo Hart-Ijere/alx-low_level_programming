@@ -10,9 +10,10 @@
  * Return: 0 if successful, 1 if there are not exactly 2 arguments
  */
 int main(int argc, char *argv[])
-{
-int num, num2, result;
-
+{  
+int num;
+int num2;
+int result;
 if (argc != 3)
 {
 printf("Error\n");
@@ -25,7 +26,6 @@ num2 = atoi(argv[2]);
 result = num * num2;
 printf("%d\n", result);
 }
-
 return (0);
 }
 
