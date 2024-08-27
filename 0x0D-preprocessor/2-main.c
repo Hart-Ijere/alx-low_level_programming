@@ -4,7 +4,7 @@
 int main(void)
 {
     // Print the name of the file it was compiled from
-    _putchar(__FILE__);
-    _putchar('\n');
+    putchar(__FILE__);
+    putchar('\n');
     return (EXIT_SUCCESS);
 }
