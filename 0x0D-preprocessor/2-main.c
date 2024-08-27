@@ -1,15 +1,12 @@
-#include <unistd.h>
-#include <stdlib.h>
+#include <stdio.h>
 
+/**
+ * main - prints file name
+ *
+ * Return: 0 if succesful
+ */
 int main(void)
 {
-    char *filename = __FILE__;
-    while (*filename)
-    {
-        write(1, filename, 1);  // Write each character of the filename
-        filename++;
-    }
-    write(1, "\n", 1);  // Write a newline character
-
-    return (EXIT_SUCCESS);
+printf("%s\n", __FILE__);
+return (0);
 }
