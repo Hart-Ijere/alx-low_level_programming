@@ -1,10 +1,15 @@
+#include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 int main(void)
 {
-    // Print the name of the file it was compiled from
-    _putchar(__main__);
-    _putchar('\n');
+    char *filename = __FILE__;
+    while (*filename)
+    {
+        write(1, filename, 1);  // Write each character of the filename
+        filename++;
+    }
+    write(1, "\n", 1);  // Write a newline character
+
     return (EXIT_SUCCESS);
 }
