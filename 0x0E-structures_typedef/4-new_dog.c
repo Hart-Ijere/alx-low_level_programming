@@ -19,9 +19,8 @@ int len1, len2, i;
 ptr = malloc(sizeof(dog_t));
 if (!ptr)
 return (NULL);
-for (len1 = 0; name[len1]; len1++);
+for (len1 = 0; name[len1]; len1++)
 for (len2 = 0; owner[len2]; len2++)
-;
 len1++;
 len2++;
 cname = malloc(len1);
