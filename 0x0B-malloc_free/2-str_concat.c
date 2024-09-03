@@ -3,7 +3,7 @@
 #include "main.h"
 
 /*
- * str_concat - function that concatenates
+ * *str_concat - function that concatenates
  * two strings
  * If NULL is passed, treats it as an empty
  * string
