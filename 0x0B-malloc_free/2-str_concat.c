@@ -5,12 +5,8 @@
 /*
  * str_concat - function that concatenates
  * two strings
- * If NULL is passed, treats it as an empty strin
- * g
- * The returned pointer points to a newly alloca
- * ted space in memory
- * which contains the contents of s1 followed by
- * the contents of s2
+ * If NULL is passed, treats it as an empty
+ * string
  * and null-terminated.
  * @s1: string to be concaneted
  * @s2: string to be concaneted
